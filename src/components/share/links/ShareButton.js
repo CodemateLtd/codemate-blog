@@ -2,12 +2,12 @@ import React from 'react'
 import FontAwesome from 'react-fontawesome'
 import styles from '../SocialLinks.module.scss'
 
-const ShareButton = ({ shareLink, media }) => {
+const ShareButton = ({ shareLink, media, newWindow = true }) => {
   const shareMedia = `share${media[0].toUpperCase() + media.slice(1)}`
-  
+
   return (
     <li className={`${styles.shareButton} ${styles[shareMedia]}`}>
-      <a target="_blank" href={shareLink}>
+      <a target={newWindow ? '_blank' : '_self'} href={shareLink}>
         <FontAwesome
           className={styles.shareIcon}
           name={media}

@@ -7,7 +7,6 @@ import LinkedinLink from './links/LinkedinLink'
 import MailLink from './links/MailLink'
 
 const SocialLinks = ({ slug, title }) => {
-  
   return (
     <div style={{ textAlign: 'center' }}>
       <h3>If you like it, share it!</h3>

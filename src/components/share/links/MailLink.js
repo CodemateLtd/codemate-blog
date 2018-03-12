@@ -7,7 +7,9 @@ const MailLink = ({ slug, title, styles }) => {
     shareTitle = encodeURIComponent(title),
     shareLink = `${mailLink}?body=${shareUrl}&subject=${shareTitle}`
 
-  return <ShareButton shareLink={shareLink} media="envelope" />
+  return (
+    <ShareButton shareLink={shareLink} media="envelope" newWindow={false} />
+  )
 }
 
 export default MailLink
