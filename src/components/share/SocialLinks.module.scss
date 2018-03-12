@@ -1,0 +1,49 @@
+.shareList {
+    list-style-type: none;
+    border: 1px solid;
+    border-radius: 3px;
+    display: table;
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    margin: 0 auto;
+    margin-bottom: 3em;
+
+    .shareButton {
+        display: table-cell;
+        transition: .5s;
+        cursor: pointer;
+        border-left: 1px solid #e1e1e1;
+
+        a {
+            text-decoration: none;
+            color: transparent;
+        }
+
+        .shareIcon {
+            color: black;
+            padding: 15px 0px;
+            width: 100%;
+            transition: .5s;
+            &:hover {
+                color: #fcfcfc;
+            }
+        }
+    }
+
+    .shareTwitter {
+        &:hover { background-color: #46d4fe; }
+    }
+    
+    .shareFacebook {
+        &:hover { background-color: #37589b; }
+    }
+    
+    .shareLinkedin {
+        &:hover { background-color: #419cca; }
+    }
+    
+    .shareEnvelope {
+        &:hover { background-color: #9fae37; }
+    }
+}
