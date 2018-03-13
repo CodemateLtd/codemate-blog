@@ -1,9 +1,11 @@
 import React from 'react'
 import ShareLink from './ShareLink'
 
-const FacebookLink = ({ slug, title, styles }) => {
+const FacebookLink = ({ pageConfig }) => {
+  const { host, port, slug, title } = pageConfig
+
   const fbLink = 'http://www.facebook.com/sharer.php',
-    shareSite = encodeURIComponent(`https://codemate.com${slug}`),
+    shareSite = encodeURIComponent(`https://${host}:${port}${slug}`),
     shareTitle = encodeURIComponent(title),
     url = `${fbLink}?u=${shareSite}&t=${shareTitle}`
 
