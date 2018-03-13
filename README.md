@@ -1,5 +1,7 @@
 # codemate-blog 🌎
 
+The site can be currently viewed at https://trusting-beaver-9ad7ad.netlify.com/
+
 ## Getting Started 🚀
 
 * `$ git clone https://github.com/CodemateLtd/codemate-blog`
