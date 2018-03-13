@@ -8,21 +8,20 @@ import SocialLinks from '../components/share/SocialLinks'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
+  timeToRead() {
+    const wpm = 200
+    const words = get(this.props, 'data.markdownRemark.wordCount.words')
+    const minutes = Math.floor(words / 200)
 
-    const timeToRead = () => {
-      const wpm = 200
-      const words = get(this.props, 'data.markdownRemark.wordCount.words')
-      const minutes = Math.floor(words / 200)
-
-      if (minutes < 1) {
-        return null
-      }
-
-      return <span> – {minutes} minutes</span>
+    if (minutes < 1) {
+      return null
     }
 
+    return <span> – {minutes} minutes</span>
+  }
+
+  render() {
+    const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next, slug } = this.props.pathContext
     const { host, port } = this.props.data.site
@@ -45,7 +44,7 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           {post.frontmatter.date}
-          {timeToRead()}
+          {this.timeToRead()}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
