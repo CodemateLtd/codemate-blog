@@ -6,7 +6,7 @@ const ShareLink = ({ url, media, newWindow = true }) => {
   const shareMedia = `share${media[0].toUpperCase() + media.slice(1)}`
 
   return (
-    <li className={`${styles.shareButton} ${styles[shareMedia]}`}>
+    <li className={`${styles.shareLink} ${styles[shareMedia]}`}>
       <a target={newWindow ? '_blank' : '_self'} href={url}>
         <FontAwesome
           className={styles.shareIcon}
