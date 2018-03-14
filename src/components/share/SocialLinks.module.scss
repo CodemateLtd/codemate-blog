@@ -10,7 +10,11 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        height: 6.4em;
+
+      .linkWrapper {
+        width: 6.5em;
+        height: 6.5em;
+      }
     
       li {
         margin: 0.5em 0.5em;
@@ -27,7 +31,6 @@
             color: #fcfcfc;
             display: block;
             height: 100%;
-            width: 5.5em;
             padding: 1.2em 0;
         }
     
@@ -82,10 +85,4 @@
         }
       }
     }
-}
-
-@media (max-width: 570px) {
-  .shareList {
-    height: initial !important;
-  }
 }
