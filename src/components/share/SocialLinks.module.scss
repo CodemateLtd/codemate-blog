@@ -9,10 +9,12 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
+        height: 6.4em;
     
       li {
-        margin: 8px;
-        flex-shrink: 1;
+        margin: 0.5em 0.5em;
+        flex-shrink: 0;
         text-align: center;
         vertical-align: middle;
         transition: .5s;
@@ -25,8 +27,8 @@
             color: white;
             display: block;
             height: 100%;
-            width: 4em;
-            padding: 1em 0;
+            width: 5.5em;
+            padding: 1.2em 0;
         }
     
         &:hover {
@@ -36,18 +38,64 @@
       
       .twitter {
         background-color: #1dcaff;
+        
+        &:hover {
+          background-color: white;
+          border: 1px solid #e1e1e1;
+
+          span {
+            color: #1dcaff;
+            transition: .5s;
+          }
+        }
       }
       
       .facebook {
         background-color: #3b5998;
+
+        &:hover {
+          background-color: white;
+          border: 1px solid #e1e1e1;
+
+          span {
+            color: #3b5998;
+            transition: .5s;
+          }
+        }
       }
       
       .linkedin {
         background-color: #007bb5;
+
+        &:hover {
+          background-color: white;
+          border: 1px solid #e1e1e1;
+
+          span {
+            color: #007bb5;
+            transition: .5s;
+          }
+        }
       }
       
       .envelope {
         background-color: #aad450;
+
+        &:hover {
+          background-color: white;
+          border: 1px solid #e1e1e1;
+
+          span {
+            color: #aad450;
+            transition: .5s;
+          }
+        }
       }
     }
+}
+
+@media (max-width: 570px) {
+  .shareList {
+    height: initial !important;
+  }
 }

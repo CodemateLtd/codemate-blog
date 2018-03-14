@@ -31,7 +31,7 @@ const ShareLink = ({ media, slug, title, newWindow = true }) => {
   return (
     <li className={styles[media]}>
       <a target={newWindow ? '_blank' : '_self'} href={url}>
-        <FontAwesome name={media} size="2x" />
+        <FontAwesome name={media} size="3x" />
       </a>
     </li>
   )
