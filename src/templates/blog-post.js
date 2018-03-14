@@ -24,7 +24,6 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next, slug } = this.props.pathContext
-    const { host, port } = this.props.data.site
 
     return (
       <div>
@@ -53,12 +52,7 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
-        <SocialLinks
-          host={host}
-          port={port}
-          slug={slug}
-          title={post.frontmatter.title}
-        />
+        <SocialLinks slug={slug} title={post.frontmatter.title} />
 
         <ul
           style={{
@@ -99,8 +93,6 @@ export const pageQuery = graphql`
         title
         author
       }
-      host
-      port
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id

@@ -1,50 +1,49 @@
 .shareList {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
-    border: 1px solid;
-    border-radius: 3px;
-    display: table;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  li {
+    margin: 8px;
+    flex-shrink: 1;
     text-align: center;
-    table-layout: fixed;
-    margin: 0 auto;
-    margin-bottom: 3em;
+    vertical-align: middle;
+    transition: .5s;
+    color: white !important;
+    border-radius: 7px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.5);
 
-    .shareLink {
-        display: table-cell;
-        transition: .5s;
-        cursor: pointer;
-        border-left: 1px solid #e1e1e1;
-
-        a {
-            text-decoration: none;
-            color: transparent;
-        }
-
-        .shareIcon {
-            color: black;
-            padding: 15px 0px;
-            width: 100%;
-            transition: .5s;
-            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-            &:hover {
-                color: #fcfcfc;
-            }
-        }
+    a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        height: 100%;
+        width: 4em;
+        padding: 1em 0;
     }
 
-    .shareTwitter {
-        &:hover { background-color: #46d4fe; }
+    &:hover {
+        transform: scale(1.1);
     }
-    
-    .shareFacebook {
-        &:hover { background-color: #37589b; }
-    }
-    
-    .shareLinkedin {
-        &:hover { background-color: #419cca; }
-    }
-    
-    .shareEnvelope {
-        &:hover { background-color: #9fae37; }
-    }
+  }
+  
+  .twitter {
+    background-color: #1dcaff;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .linkedin {
+    background-color: #007bb5;
+  }
+  
+  .envelope {
+    background-color: #aad450;
+  }
 }
