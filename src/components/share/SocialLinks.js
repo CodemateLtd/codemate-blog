@@ -4,7 +4,7 @@ import ShareLink from './ShareLink'
 
 const SocialLinks = ({ slug, title }) => {
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div className={styles.socialLinks}>
       <h3>If you like it, share it!</h3>
 
       <ul className={styles.shareList}>

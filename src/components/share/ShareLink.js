@@ -10,7 +10,7 @@ const ShareLink = ({ media, slug, title, newWindow = true }) => {
   switch (media) {
     case 'twitter':
       const twitterLink = 'https://twitter.com/share'
-      url = `${twitterLink}?text=${title}&url=${shareBlogUrl}`
+      url = `${twitterLink}?text=${shareTitle}&url=${shareBlogUrl}`
       break
     case 'facebook':
       const fbLink = 'http://www.facebook.com/sharer.php'
