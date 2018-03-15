@@ -4,17 +4,35 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 import Bio from '../components/Bio'
+import SocialLinks from '../components/share/SocialLinks'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
+  timeToRead() {
+    const wpm = 200
+    const words = get(this.props, 'data.markdownRemark.wordCount.words')
+    const minutes = Math.floor(words / 200)
+
+    if (minutes < 1) {
+      return null
+    }
+
+    return <span> – {minutes} minutes</span>
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const { previous, next } = this.props.pathContext
+    const { previous, next, slug } = this.props.pathContext
 
     return (
       <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`}>
+          <link
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+          />
+        </Helmet>
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -25,6 +43,7 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           {post.frontmatter.date}
+          {this.timeToRead()}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -33,6 +52,7 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
+        <SocialLinks slug={slug} title={post.frontmatter.title} />
 
         <ul
           style={{
@@ -80,6 +100,9 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+      }
+      wordCount {
+        words
       }
     }
   }
