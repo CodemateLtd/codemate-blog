@@ -32,7 +32,7 @@ const ShareLink = ({ media, slug, title, newWindow = true }) => {
     <div className={styles.linkWrapper}>
       <li className={styles[media]}>
         <a target={newWindow ? '_blank' : '_self'} href={url}>
-          <FontAwesome name={media} size="3x" />
+          <FontAwesome name={media} size="1x" />
         </a>
       </li>
     </div>
