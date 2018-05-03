@@ -64,7 +64,7 @@ To give you a headstart in implementing code reviews for your teams, here are th
 2.  [A pull request template](https://github.com/CodemateLtd/cookbook/blob/master/.github/PULL_REQUEST_TEMPLATE.md). This is where you state that the team does code reviews, that they will be enforced, and that pull requests should be authored accordingly. Ours is simple but gets the job done.
 3.  [Useful resources about how to do this well](https://github.com/CodemateLtd/cookbook/blob/master/CONTRIBUTING.md). Code reviews are a solved problem, there are great resources out there to take inspiration from.
 
-Take all of these, sprinkle some LGTM ([Looks Good To Me](http://knowyourmeme.com/memes/lgtm) images on top when approving changes, and you’re good to go. Code reviews can feel tense at times, those silly images set a more relaxed tone, and can ease the relationship between reviewers and reviewees. Plus, a nice picture is a great reward for good work!
+Take all of these, sprinkle some LGTM ([Looks Good To Me](http://knowyourmeme.com/memes/lgtm)) images on top when approving changes, and you’re good to go. Code reviews can feel tense at times, those silly images set a more relaxed tone, and can ease the relationship between reviewers and reviewees. Plus, a nice picture is a great reward for good work!
 
 You can find those images all over the internet, with Google’s Images search or with a service like https://www.lgtm.in/. Here is what it looks like in practice:
 
