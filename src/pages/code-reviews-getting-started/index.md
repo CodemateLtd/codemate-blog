@@ -4,7 +4,7 @@ date: 2018-05-03T12:07:50+03:00
 draft: false
 ---
 
-What if I told you there is this really straightforward technique to make your project run smoother, faster, and with fewer bugs 🤔. Better yet, it’s completely free, requires only minimal tooling, and any developer can learn to use it in a matter of minutes 😳. This is how good code reviews are, and why you should use them.
+What if I told you there is a simple technique to make your project run smoother, faster, and with fewer bugs 🤔. Better yet, it’s completely free, does not require much tooling, and any developer can learn to use it in a matter of minutes 😳. This is how good code reviews are, and why you should use them.
 
 _Author: Thibaud Colas, Software Architect at Codemate Ltd._
 
