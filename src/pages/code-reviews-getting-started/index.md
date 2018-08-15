@@ -64,9 +64,9 @@ With the business case taken care of, simply try code reviews for yourself! Ever
 
 To give you a headstart in implementing code reviews for your teams, here are three things you will need:
 
-1.  [Code review guidelines](https://github.com/CodemateLtd/cookbook/blob/master/CONTRIBUTING.md). We usually put those in a `CONTRIBUTING.md` file at the root of the project.
-2.  [A pull request template](https://github.com/CodemateLtd/cookbook/blob/master/.github/PULL_REQUEST_TEMPLATE.md). This is where you state that the team does code reviews, that they will be enforced, and that pull requests should be authored accordingly. Ours is simple but gets the job done.
-3.  [Useful resources about how to do this well](https://github.com/CodemateLtd/cookbook/blob/master/CONTRIBUTING.md). Code reviews are a solved problem, and there are great resources out there to take inspiration from.
+1.  [Code review guidelines](https://github.com/thibaudcolas/cookbook/blob/master/CONTRIBUTING.md). We usually put those in a `CONTRIBUTING.md` file at the root of the project.
+2.  [A pull request template](https://github.com/thibaudcolas/cookbook/blob/master/.github/PULL_REQUEST_TEMPLATE.md). This is where you state that the team does code reviews, that they will be enforced, and that pull requests should be authored accordingly. Ours is simple but gets the job done.
+3.  [Useful resources about how to do this well](https://github.com/thibaudcolas/cookbook/blob/master/CONTRIBUTING.md). Code reviews are a solved problem, and there are great resources out there to take inspiration from.
 
 Take all of these, sprinkle some LGTM ([Looks Good To Me](http://knowyourmeme.com/memes/lgtm)) images on top when approving changes, and you’re good to go. Code reviews can feel tense at times, those silly images set a more relaxed tone, and can ease the relationship between reviewers and reviewees. Plus, a nice picture is a great reward for good work!
 
@@ -87,6 +87,6 @@ If you want to invest in figuring out the best guidelines and workflow for your 
 
 ## Do it!
 
-Still unsure? The best way to know whether code reviews will work for your team is to try them. All of the major hosted Git platforms have pull request features with code reviews built-in, you can try them out and see for yourself how many defects you will catch before they even get merged. At Codemate, a good example of this in practice is [my review of Iiro’s inKino project](https://github.com/roughike/inKino/issues/52). I didn’t catch any bugs, but we certainly all learned a lot 😄 – for me, [Flutter](https://www.codemate.com//considering-flutter), and for him a web developer’s perspective on UI code architecture.
+Still unsure? The best way to know whether code reviews will work for your team is to try them. All of the major hosted Git platforms have pull request features with code reviews built-in, you can try them out and see for yourself how many defects you will catch before they even get merged. At Codemate, a good example of this in practice is [my review of Iiro’s inKino project](https://github.com/roughike/inKino/issues/52). I didn’t catch any bugs, but we certainly all learned a lot 😄 – for me, [Flutter](https://www.codemate.com/considering-flutter/), and for him a web developer’s perspective on UI code architecture.
 
-If you want to learn more about how Codemate works, have a look at how we collaborate on our [software development recipes](https://github.com/CodemateLtd/cookbook/pull/1).
+If you want to learn more about how Codemate works, have a look at how we actually [used code reviews on this very blog post](https://github.com/CodemateLtd/codemate-blog/pull/21).
