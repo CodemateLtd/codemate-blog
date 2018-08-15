@@ -14,23 +14,27 @@ _Author: Thibaud Colas, Software Architect at Codemate Ltd._
 
 Developers tend to think of productivity in terms of “how fast can I write the code for this new feature”. We also tend to say “I write code” when describing our jobs. In practice though, professional software development is a matter of understanding the code that is already there: we simply spend much more time reading than writing. Productivity thus depends more on the overall code’s quality and maintainability, rather than the skills of individual contributors making changes.
 
-Joel Spolsky puts it neatly:
+Simply put:
 
-> [It’s harder to read code than to write it](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/).
+> **It’s harder to read code than to write it.**
+>
+> – [Joel Spolsky, Things You Should Never Do, Part I](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
-John Papa recently gave a great talk about what code readability means in practice:
+Code readability is fundamental. John Papa recently gave a talk on how to achieve it in practice:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/56mETnrByBM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-If you like numbers, another great article on the topic is [Code Reviews: Just Do It](https://blog.codinghorror.com/code-reviews-just-do-it/) by Jeff Atwood. You should definitely read it. I especially like its excerpts from [Code Complete](https://www.amazon.com/exec/obidos/ASIN/0735619670):
+Another great resource on the topic is [Code Reviews: Just Do It](https://blog.codinghorror.com/code-reviews-just-do-it/) by Jeff Atwood. If you like numbers, you should definitely read it. I especially like its excerpts from [Code Complete](https://www.amazon.com/exec/obidos/ASIN/0735619670):
 
 > … software testing alone has limited effectiveness – the average defect detection rate is only 25 percent for unit testing, 35 percent for function testing, and 45 percent for integration testing. In contrast, the average effectiveness of design and code inspections are 55 and 60 percent. Case studies of review results have been impressive:
 >
 > In a software-maintenance organization, 55 percent of one-line maintenance changes were in error before code reviews were introduced. After reviews were introduced, only 2 percent of the changes were in error. When all changes were considered, 95 percent were correct the first time after reviews were introduced. Before reviews were introduced, under 20 percent were correct the first time.
 
+That’s a 5x increase in the likelihood of individual changes to be correct! There aren’t many development practices which can make that claim.
+
 ### A great way to learn
 
-Finally, this last resource briefly mentions another reason why I think code reviews should be part of everybody’s toolset: you can learn A LOT from them. They are a great place for the team to share their knowledge and learn:
+Jeff Atwood’s article briefly mentions another reason why I think code reviews should be part of everybody’s toolset: you can learn A LOT from them. They are a great place for the team to share their knowledge and learn:
 
 * How other people would approach and solve a given problem.
 * General stylistic or architectural guidelines to follow for the specific project. Those are defined elsewhere (e.g. in a style guide or architecture principles document), but propagate well via code reviews.
@@ -62,7 +66,7 @@ To give you a headstart in implementing code reviews for your teams, here are th
 
 1.  [Code review guidelines](https://github.com/CodemateLtd/cookbook/blob/master/CONTRIBUTING.md). We usually put those in a `CONTRIBUTING.md` file at the root of the project.
 2.  [A pull request template](https://github.com/CodemateLtd/cookbook/blob/master/.github/PULL_REQUEST_TEMPLATE.md). This is where you state that the team does code reviews, that they will be enforced, and that pull requests should be authored accordingly. Ours is simple but gets the job done.
-3.  [Useful resources about how to do this well](https://github.com/CodemateLtd/cookbook/blob/master/CONTRIBUTING.md). Code reviews are a solved problem, there are great resources out there to take inspiration from.
+3.  [Useful resources about how to do this well](https://github.com/CodemateLtd/cookbook/blob/master/CONTRIBUTING.md). Code reviews are a solved problem, and there are great resources out there to take inspiration from.
 
 Take all of these, sprinkle some LGTM ([Looks Good To Me](http://knowyourmeme.com/memes/lgtm)) images on top when approving changes, and you’re good to go. Code reviews can feel tense at times, those silly images set a more relaxed tone, and can ease the relationship between reviewers and reviewees. Plus, a nice picture is a great reward for good work!
 
@@ -79,7 +83,7 @@ If you want to invest in figuring out the best guidelines and workflow for your 
 * [Code Reviews: Just Do It](https://blog.codinghorror.com/code-reviews-just-do-it/) by Jeff Atwood, my absolute favorite.
 * The Flutter project has good [code review guidelines](https://flutter.io/design-principles/). I particularly like how they talk about the benefits of code reviews. This is a large-scale open-source project so their particular workflow might not fit perfectly for proprietary work, but still worth having a look.
 * Karumi has really nice pull request guidelines and templates as part of their [project quality assurance guidelines](https://github.com/Karumi/project-quality-assurance). I would really like all the teams I’m part of to have such high-quality guidelines.
-* Finally, Michael Lynch’s two-part article on doing code reviews [like a human](https://mtlynch.io/human-code-reviews-1/) is well worth a read. I think it is probably not necessary to get started, but if your team needs to improve how they communicate as well then this contains good advice.
+* Finally, Michael Lynch’s two-part article on [doing code reviews like a human](https://mtlynch.io/human-code-reviews-1/) is well worth a read, especially for its tips on effective team communication.
 
 ## Do it!
 
