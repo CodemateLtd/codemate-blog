@@ -56,9 +56,11 @@ In practice, the first step is to “convince the boss”. Show them those great
 
 _Relative cost of fixing defects in the software development lifecycle. The later, the worse. Source: IBM System Science Institute._
 
-### Get started with pull request reviews
+### Leverage existing tooling
 
-With the business case taken care of, simply try code reviews for yourself! Every major Git platform has a pull request feature with built-in [review workflows](https://help.github.com/articles/requesting-a-pull-request-review/). If yours doesn’t, you can try doing code reviews in person instead, [pair programming style](https://en.wikipedia.org/wiki/Extreme_programming). No matter how you do it – start small, and see how it works out for you.
+With the business case taken care of, simply try code reviews for yourself, with the tools you already use! Every major Git platform has a pull request feature with built-in [review workflows](https://help.github.com/articles/requesting-a-pull-request-review/). If yours doesn’t, you can try doing code reviews in person instead, [pair programming style](https://en.wikipedia.org/wiki/Extreme_programming).
+
+Be kind, and let your tools do the nitpicking: linters and formatters (like [Prettier](https://prettier.io/)) are there to enforce common formatting, so humans can focus on logic, readability, and learning. Don’t waste time discussing tabs versus spaces on each review.
 
 ## Resources to get started
 
@@ -68,22 +70,11 @@ To give you a headstart in implementing code reviews for your teams, here are th
 2.  [A pull request template](https://github.com/thibaudcolas/cookbook/blob/master/.github/PULL_REQUEST_TEMPLATE.md). This is where you state that the team does code reviews, that they will be enforced, and that pull requests should be authored accordingly. Ours is simple but gets the job done.
 3.  [Useful resources about how to do this well](https://github.com/thibaudcolas/cookbook/blob/master/CONTRIBUTING.md). Code reviews are a solved problem, and there are great resources out there to take inspiration from.
 
-Take all of these, sprinkle some LGTM ([Looks Good To Me](http://knowyourmeme.com/memes/lgtm)) images on top when approving changes, and you’re good to go. Code reviews can feel tense at times, those silly images set a more relaxed tone, and can ease the relationship between reviewers and reviewees. Plus, a nice picture is a great reward for good work!
-
-You can find those images all over the internet, with Google’s Images search or with a service like https://www.lgtm.in/. Here is what it looks like in practice:
+Take all of these, sprinkle some [LGTM](https://www.lgtm.in/) ([Looks Good To Me](http://knowyourmeme.com/memes/lgtm)) images on top when approving changes, and you’re all set. Code reviews can feel tense at times, those silly images set a more relaxed tone, and can ease the relationship between reviewers and reviewees. Plus, a nice picture is a great reward for good work!
 
 ![Screenshot of a GitHub code review from @flarnie, with a cute Looks Good To Me image of a jumping goat captioned "LOOKS GOAT TO ME"](./images/flarnie-lgtm.png)
 
-_Pro-level LGTM from Facebook’s @flarnie on the [Draft.js project](https://github.com/facebook/draft-js/pull/1652)_
-
-## Taking it next level
-
-If you want to invest in figuring out the best guidelines and workflow for your team, review those resources with your colleagues so you can have more informed conversations about your particular situation.
-
-* [Code Reviews: Just Do It](https://blog.codinghorror.com/code-reviews-just-do-it/) by Jeff Atwood, my absolute favorite.
-* The Flutter project has good [code review guidelines](https://flutter.io/design-principles/). I particularly like how they talk about the benefits of code reviews. This is a large-scale open-source project so their particular workflow might not fit perfectly for proprietary work, but still worth having a look.
-* Karumi has really nice pull request guidelines and templates as part of their [project quality assurance guidelines](https://github.com/Karumi/project-quality-assurance). I would really like all the teams I’m part of to have such high-quality guidelines.
-* Finally, Michael Lynch’s two-part article on [doing code reviews like a human](https://mtlynch.io/human-code-reviews-1/) is well worth a read, especially for its tips on effective team communication.
+_Pro-level LGTM on the [Draft.js repository](https://github.com/facebook/draft-js/pull/1652)_
 
 ## Do it!
 
