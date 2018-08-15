@@ -33,7 +33,7 @@ If you like numbers, another great article on the topic is [Code Reviews: Just D
 Finally, this last resource briefly mentions another reason why I think code reviews should be part of everybody’s toolset: you can learn A LOT from them. They are a great place for the team to share their knowledge and learn:
 
 * How other people would approach and solve a given problem.
-* General stylistic or architectural guidelines to follow for the specific project. Those are defined elsewhere (eg. in a styleguide or architecture principles document) but propagate well via code reviews.
+* General stylistic or architectural guidelines to follow for the specific project. Those are defined elsewhere (e.g. in a style guide or architecture principles document), but propagate well via code reviews.
 * Neat programming tricks! For example using [list mapping (`Array#map`) over a mutable iteration (`Array#forEach` and `Array#push`)](https://github.com/roughike/inKino/issues/52).
 
 ![Screenshot of a GitHub code review from @loicteixeira, with an insightful review comment](./images/loicteixeira-code-review.png)
@@ -46,7 +46,7 @@ Sounds great on paper, right? 🌈
 
 ### Convince the boss
 
-In practice, the first step is to “convince the boss”. Show them those great [metrics on the effectiveness of code reviews](https://blog.codinghorror.com/code-reviews-just-do-it/). Talk about how reviews improve [quality _in terms of business value_](https://www.codemate.com/quality-in-terms-of-business-value). Their main scepticism might be in the cost of having more people working on an otherwise identical amount of changes – this is a good time to talk about the economics of fixing software defects:
+In practice, the first step is to “convince the boss”. Show them those great [metrics on the effectiveness of code reviews](https://blog.codinghorror.com/code-reviews-just-do-it/). Talk about how reviews improve [quality _in terms of business value_](https://www.codemate.com/quality-in-terms-of-business-value). Their main concern might be in the cost of having more people working on an otherwise identical amount of changes – this is a good time to talk about the economics of fixing software defects:
 
 ![Bar chart showing the relative cost of fixing software defects in each phase of the software development lifecycle. The relative cost increases from 1 in design, to 6.5 in implementation, 15 in testing, and 100 in maintenance.](./images/relative-cost-of-fixing-defects-sdlc.png)
 
@@ -83,6 +83,6 @@ If you want to invest in figuring out the best guidelines and workflow for your 
 
 ## Do it!
 
-Still sceptical? The best way to know whether code reviews will work for your team is to try them. All of the major hosted Git platforms have pull request features with code reviews built-in, you can try them out and see for yourself how many defects you will catch before they even get merged. At Codemate, a good example of this in practice is [my review of Iiro’s inKino project](https://github.com/roughike/inKino/issues/52). I didn’t catch any bugs, but we certainly all learned a lot 😄 – for me, [Flutter](https://www.codemate.com//considering-flutter), and for him a web developer’s perspective on UI code architecture.
+Still unsure? The best way to know whether code reviews will work for your team is to try them. All of the major hosted Git platforms have pull request features with code reviews built-in, you can try them out and see for yourself how many defects you will catch before they even get merged. At Codemate, a good example of this in practice is [my review of Iiro’s inKino project](https://github.com/roughike/inKino/issues/52). I didn’t catch any bugs, but we certainly all learned a lot 😄 – for me, [Flutter](https://www.codemate.com//considering-flutter), and for him a web developer’s perspective on UI code architecture.
 
 If you want to learn more about how Codemate works, have a look at how we collaborate on our [software development recipes](https://github.com/CodemateLtd/cookbook/pull/1).
