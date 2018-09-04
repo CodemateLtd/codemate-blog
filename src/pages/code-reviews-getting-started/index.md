@@ -1,6 +1,6 @@
 ---
 title: "Code reviews: getting started"
-date: 2018-05-03T12:07:50+03:00
+date: 2018-09-04T12:07:50+03:00
 draft: false
 ---
 
@@ -18,7 +18,7 @@ Simply put:
 
 > **It’s harder to read code than to write it.**
 >
-> – [Joel Spolsky, Things You Should Never Do, Part I](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
+> – Joel Spolsky, [Things You Should Never Do](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
 Code readability is fundamental. John Papa recently gave a talk on how to achieve it in practice:
 
@@ -26,11 +26,13 @@ Code readability is fundamental. John Papa recently gave a talk on how to achiev
 
 Another great resource on the topic is [Code Reviews: Just Do It](https://blog.codinghorror.com/code-reviews-just-do-it/) by Jeff Atwood. If you like numbers, you should definitely read it. I especially like its excerpts from [Code Complete](https://www.amazon.com/exec/obidos/ASIN/0735619670):
 
-> … software testing alone has limited effectiveness – the average defect detection rate is only 25 percent for unit testing, 35 percent for function testing, and 45 percent for integration testing. In contrast, the average effectiveness of design and code inspections are 55 and 60 percent. Case studies of review results have been impressive:
+> the average defect detection rate is only 25 percent for unit testing, 35 percent for function testing, and 45 percent for integration testing. In contrast, the average effectiveness of design and code inspections are 55 and 60 percent.
 >
-> In a software-maintenance organization, 55 percent of one-line maintenance changes were in error before code reviews were introduced. After reviews were introduced, only 2 percent of the changes were in error. When all changes were considered, 95 percent were correct the first time after reviews were introduced. Before reviews were introduced, under 20 percent were correct the first time.
+> In a software-maintenance organization, 55 percent of one-line maintenance changes were in error before code reviews were introduced. After reviews were introduced, only 2 percent of the changes were in error. 
+> 
+> When all changes were considered, 95 percent were correct the first time after reviews were introduced. Before reviews were introduced, under 20 percent were correct the first time.
 
-That’s a 5x increase in the likelihood of individual changes to be correct! There aren’t many development practices which can make that claim.
+That’s a **5x increase** in the likelihood of individual changes to be correct! There aren’t many development practices which can make that claim.
 
 ### A great way to learn
 
@@ -38,7 +40,7 @@ Jeff Atwood’s article briefly mentions another reason why I think code reviews
 
 * How other people would approach and solve a given problem.
 * General stylistic or architectural guidelines to follow for the specific project. Those are defined elsewhere (e.g. in a style guide or architecture principles document), but propagate well via code reviews.
-* Neat programming tricks! For example using [list mapping (`Array#map`) over a mutable iteration (`Array#forEach` and `Array#push`)](https://github.com/roughike/inKino/issues/52).
+* Neat programming tricks! For example using [list mapping](https://github.com/roughike/inKino/issues/52) (`Array#map`) over a mutable iteration (`Array#forEach` and `Array#push`).
 
 ![Screenshot of a GitHub code review from @loicteixeira, with an insightful review comment](./images/loicteixeira-code-review.png)
 
@@ -70,7 +72,7 @@ To give you a headstart in implementing code reviews for your teams, here are th
 2.  [A pull request template](https://github.com/thibaudcolas/cookbook/blob/master/.github/PULL_REQUEST_TEMPLATE.md). This is where you state that the team does code reviews, that they will be enforced, and that pull requests should be authored accordingly. Ours is simple but gets the job done.
 3.  [Useful resources about how to do this well](https://github.com/thibaudcolas/cookbook/blob/master/CONTRIBUTING.md). Code reviews are a solved problem, and there are great resources out there to take inspiration from.
 
-Take all of these, sprinkle some [LGTM](https://www.lgtm.in/) ([Looks Good To Me](http://knowyourmeme.com/memes/lgtm)) images on top when approving changes, and you’re all set. Code reviews can feel tense at times, those silly images set a more relaxed tone, and can ease the relationship between reviewers and reviewees. Plus, a nice picture is a great reward for good work!
+Take all of these, sprinkle some LGTM ([Looks Good To Me](http://knowyourmeme.com/memes/lgtm)) images on top when approving changes, and you’re all set. Code reviews can feel tense at times, those silly images set a more relaxed tone, and can ease the relationship between reviewers and reviewees. Plus, a nice picture is a great reward for good work!
 
 ![Screenshot of a GitHub code review from @flarnie, with a cute Looks Good To Me image of a jumping goat captioned "LOOKS GOAT TO ME"](./images/flarnie-lgtm.png)
 
